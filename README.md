@@ -2,8 +2,6 @@
 
 It is a web application that fetches real-time weather data from the OpenWeather API and presents it to the user in a user-friendly UI.
 
-# Live : weather-insights-byastha.netlify.app/
-
 # Features
 
     - Display the current weather conditions including temperature, humidity, wind speed, and weather description.
