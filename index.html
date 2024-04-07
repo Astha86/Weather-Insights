@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <title>Weather Insights</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <h1>Weather Insights</h1>
+
+        <div class="tab-container">
+            <p class="tab" user-weather>My weather</p>
+            <p class="tab" search-weather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+
+            <!-- Location Access -->
+            <div class="sub-container location-access">
+                <button class="design">
+                    <img src="./assets/location.gif" width="80" height="80" loading="lazy">
+                </button>
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button class="btn" grant-access>Grant Access</button>
+            </div>
+
+            <!-- Search Section -->
+            <form class="search-container">
+                <input placeholder="Search location..." search-input>
+                <button class="btn">
+                    <img src="./assets/search.webp" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!-- Loading Section -->
+            <div class="sub-container loading-container">
+                <img src="./assets/Flat hourglass.gif" width="150" height="150">
+                <p>Loading...</p>
+            </div>
+
+            <!-- Weather Information -->
+            <div class="sub-container weather media">
+
+                <div class="name">
+                    <p city-name></p>
+                    <img country-flag>
+                </div>
+
+                <p weather-type></p>
+                <img weather-img>
+                <p temp></p>
+
+                <div class="weather-info">
+
+                    <!-- wind card -->
+                    <div class="info">
+                        <img src="./assets/Windy.gif">
+                        <p>WindSpeed</p>
+                        <p wind></p>
+                    </div>
+
+                    <!-- humidity card -->
+                    <div class="info">
+                        <img src="./assets/humid.gif" width="80" height="80">
+                        <p>Humidity</p>
+                        <p humid></p>
+                    </div>
+                    
+                    <!-- cloud card -->
+                    <div class="info">
+                        <img src="./assets/cloud.gif">
+                        <p>Clouds</p>
+                        <p cloud></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
