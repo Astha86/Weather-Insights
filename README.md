@@ -15,29 +15,24 @@ It is a web application that fetches real-time weather data from the OpenWeather
     - OpenWeather API to fetch real-time weather data.
     - (Optional) Geolocation API to detect the user's current location.
 
-## How to Use
+# Usage
 
-    - Clone the repository:
+1. **User Location Weather**:
+   - Click the "Your Weather" tab to access weather information based on your current location.
+   - Grant location access when prompted.
+   - The app will display real-time weather details for your current coordinates.
 
-## cd weather-app
+2. **City Weather Search**:
+   - Click the "Search Weather" tab.
+   - Enter the name of a city in the input field and submit the form.
+   - The app will fetch and display weather data for the specified city.
 
-    - Open index.html in your preferred web browser.
+# Contributing
 
-    - Enter the name of the city you want to check the weather for in the search box.
+Contributions are welcome! If you'd like to contribute to this project, follow these steps:
 
-    - Press the "Search" button to fetch and display the weather data for the specified city.
-
-    - (Optional) Allow the app to use your device's location to automatically fetch the weather data for your current location.
-
-## API Key Setup
-
-To use the OpenWeather API, you need to sign up on their website to obtain an API key. Once you have the API key, create a file named config.js in the project directory and store your API key in it as follows:
-
-#E javascript
-
-// config.js
-const API_KEY = 'YOUR_API_KEY_HERE';
-
-Replace 'YOUR_API_KEY_HERE' with your actual API key.
-
-### Note: Do not share your API key publicly or commit it to version control. Use environment variables or other secure methods to manage the API key in production.
+1. Fork the repository on GitHub.
+2. Create a new branch from the `main` branch.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request to merge your changes into the main repository.
